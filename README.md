@@ -28,7 +28,7 @@ O Objetivo do teste consiste em validar o endereço da unidade no Distrito Feder
 
 ### ![image.png](/images/04.png)
 
-Deve-se seguir estes passos:
+### Deve-se seguir estes passos:
 
 - Elaborar o BDD com o comportamento das screens acima
 - Montar o script de automação com todos os requisitos solicitados
