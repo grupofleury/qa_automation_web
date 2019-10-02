@@ -1,6 +1,9 @@
 
 class BaseScreen
 
+  # todos os metodos tem a ideia para que nao se utilize mapeamento/funçoes do capybara direto.
+  # a ideia é que seja de simples acesso e de programaçao rapida e objetiva.
+
   def self.identificator(element_name, &block)
     define_method(element_name.to_s, *block)
   end
@@ -15,38 +18,6 @@ class BaseScreen
     true
   end
 
-  def get_element(element)
-    begin
-      if element.is_a? Array
-        case element.size
-        when 2
-          selector = element[0].to_sym
-          element = element[1]
-          el = find(selector, element)
-        when 3
-          selector = element[0].to_sym
-          count = (element.size == 3 ? element[2].to_i : 0)
-          element = element[1]
-          el = find(selector, element)[count]
-          if el.nil?
-            raise Selenium::WebDriver::Error::NoSuchElementError, \
-                  "The element #{element} was not found"
-          end
-        end
-      else
-        el = find :id, element
-      end
-    rescue StandardError => e
-      if e.class.to_s.include?('InvalidSessionIdError' || 'NoSuchDriverError' || 'UnknownError')
-        raise e
-      else
-        raise Selenium::WebDriver::Error::NoSuchElementError, \
-              "Could not find the element #{element}"
-      end
-    end
-    el
-  end
-
 
   #metodo para clicar em qualquer menu da lista de opçoes do site
   def select_menu(element, text)
@@ -56,6 +27,7 @@ class BaseScreen
     list[index].click
   end
 
+  #metodo usado para fazer o scroll da tela caso o elemento nao esteja na mesma, ate encontralo
   def scroll_element(element)
     execute_script "window.scrollBy(0,100)"
     while find(element).visible? == false
@@ -63,12 +35,14 @@ class BaseScreen
     end
   end
 
+  # metodo para selecionar opçoes em combobox
   def select_combobox (element,list,option)
     find(element).click
     find(list, :text => option).click
   rescue 'Element not exist'
   end
 
+  # metodo para realizar diferentes tipos de clicks
   def click element, text
     if text.nil?
       find(element).click
@@ -78,6 +52,7 @@ class BaseScreen
   rescue 'Element not exist'
   end
 
+  #metodo para validar se o elemento mapeando tem o contem o texto informado
   def validate_text(element)
     el = find(element).text
     find(element, :text => /#{el}?/i)

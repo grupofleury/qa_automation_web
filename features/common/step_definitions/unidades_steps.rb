@@ -1,5 +1,5 @@
 
-# foram criados esses tipode de specs para que sejam reutilizaveis, de formar compacta e objetiva
+# foram criados esses tipos de de specs para que sejam reutilizaveis, de formar compacta e objetiva
 
   Dado("que acesso o menu {string} na pagina inicial") do |string|
     home = HomeScreen.new

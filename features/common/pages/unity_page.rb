@@ -1,4 +1,4 @@
-
+#MAPEAMENTO DA PAGINA DE UNIDADES
 class UnityScreen < BaseScreen
 
   identificator (:cb_states) { '.select2-choice' }
