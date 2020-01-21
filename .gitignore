@@ -1,0 +1,5 @@
+.byebug_history
+debug.log
+log/*.png
+log/screenshots/*
+Gemfile.lock

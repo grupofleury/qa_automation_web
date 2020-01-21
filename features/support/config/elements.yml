@@ -1,0 +1,7 @@
+# Elementos das Páginas
+
+# Home:
+link_menu_unidades: '.boxcomponentstyle__Item-fsdxo7-1 a[class*=unidades]' 
+
+# Units:
+link_unidade_brasilia: '.sc-bwzfXH .unit-cellcomponentstyle__UnitCellStyled-sc-135xmhl-0 .boxcomponentstyle__Item-fsdxo7-1'
