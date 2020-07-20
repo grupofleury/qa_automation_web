@@ -20,13 +20,13 @@
 
 O Objetivo do teste consiste em validar o endereço da unidade no Distrito Federal através do site [Fleury](http://www.fleury.com.br)
 
-### ![image.png](/images/01.png)
+### ![image.png](/images/Imagem01.png)
 
-### ![image.png](/images/02.png)
+### ![image.png](/images/Imagem02.png)
 
-### ![image.png](/images/03.png)
+### ![image.png](/images/Imagem03.png)
 
-### ![image.png](/images/04.png)
+### ![image.png](/images/Imagem04.png)
 
 ### Deve-se seguir estes passos:
 
