@@ -21,8 +21,9 @@ at_exit do
         config.input_path = 'logs/report.json'
         config.report_path = 'logs/report'
         config.report_types = [:html]
+        config.include_images = true
         config.report_title = 'Fleury'
-        config.color = "Cyan"
+        config.color = "indigo"
         config.additional_info = {browser: 'Chrome', environment: 'Fleury'}
     end 
   ReportBuilder.build_report
