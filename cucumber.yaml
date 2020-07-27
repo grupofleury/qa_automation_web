@@ -1,7 +1,0 @@
-#Utilizarei o yaml para facilitar a manutenção conforme
-#a expansão do teste envolver vários ambientes e facilitar na manutenção
----
-default: -p test -p html -p pretty
-test: ENV_TYPE=test_toolbox
-html: --format html --out=log/reports.html
-pretty: --format=pretty
