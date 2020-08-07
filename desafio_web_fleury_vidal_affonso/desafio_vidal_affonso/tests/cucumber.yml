@@ -1,0 +1,17 @@
+## YML template Executation
+---
+
+default: -p pretty -p html -p chrome -p producao
+
+pretty: --format pretty
+ci:  --format progress
+
+homolog: AMBIENTE=homolog
+producao: AMBIENTE=producao
+
+chrome: BROWSER=chrome
+firefox: BROWSER=firefox
+chrome_headless: BROWSER=chrome_headless
+
+html: --format html --out=results/report.html
+json: --format json --out=results/report.json
