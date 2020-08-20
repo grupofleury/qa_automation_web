@@ -1,0 +1,11 @@
+source 'http://rubygems.org'
+
+gem 'capybara'
+gem 'chromedriver-helper'
+gem 'cucumber'
+gem 'rcodetools'
+gem 'fastri'
+gem 'rspec'
+gem 'rubocop'
+gem 'selenium-webdriver'
+gem 'site_prism'

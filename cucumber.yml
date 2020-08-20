@@ -1,0 +1,10 @@
+## YML Templates
+---
+
+default: -p url_prod -p report -p pretty -p headless_on
+url_prod: ENVIRONMENT_TYPE=url_fleury
+report: --format html --out=results/report.html
+pretty: --format pretty
+progress: --format progress
+headless_on: HEADLESS=headless_on
+headless_off: HEADLESS=headless_off
