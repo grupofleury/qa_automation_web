@@ -1,0 +1,4 @@
+# Arquivo yml para configuração de ambientes, facilita na hora de executar
+# os testes em mais de um ambiente.
+
+url_padrao: 'http://www.fleury.com.br/'

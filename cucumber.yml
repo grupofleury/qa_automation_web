@@ -1,0 +1,10 @@
+#Arquivo yml criado para gerar relatório de testes na pasta report/screenshot
+
+#Irá rodar os testes em ambiente de produção.
+
+default: -p pretty -p chrome -p producao -p html 
+pretty: --format pretty
+chrome: BROWSER=chrome
+firefox: BROWSER=firefox
+producao: AMBIENTE=producao 
+html: --format html --out=reports/relatorio.html

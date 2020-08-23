@@ -1,49 +1,61 @@
-# [Fleury] - QA Automação
-## Desafio Web
+PROJETO: 
 
-### Requisitos
+Fleury - QA Automação Desafio Web.
 
-- Ruby
-- Capybara
-- Cucumber
-- BDD
-- Report
-- Page Objects
+###########################################################################################
 
-### Sugestões:
+CRITÉRIO DE ACEITE: 
 
-- Aplicar alguma técnica de Page Objects e Justificar
-- Evitar Hard-Code
-- Inserir comentários/justificativas sobre seus scripts de automação 
+O Objetivo do teste consiste em validar o Nome da unidade que é exibida na tela, através do site Fleury.
 
-### Teste:
+#############################################################################################
 
-O Objetivo do teste consiste em validar o Nome da unidade que é exibida na tela, através do site [Fleury](http://www.fleury.com.br)
+TECNOLOGIAS APLICADAS:
 
-### ![image.png](/images/Imagem01.png)
+Ruby 
+Cucumber 
+Capybara 
+Site_prism 
+IDE: VsCode
 
-### ![image.png](/images/Imagem02.png)
+#############################################################################################
 
-### ![image.png](/images/Imagem03.png)
+ESTRUTURA DO PROJETO:
 
-### ![image.png](/images/Imagem04.png)
+Pasta Testes contém as pastas:
 
-### Deve-se seguir estes passos:
+features -> Com as pages, feature files, steps definitions e a support com as configurações
+de ambientes e classes.
 
-- Elaborar o BDD com o comportamento das screens acima
-- Montar o script de automação com todos os requisitos solicitados
-- Gerar um report e inclui-lo no commit, comprovando que o teste deu OK ao ser executado
+prints -> Armazena os screenshots, mostrando se o teste passou ou falhou
 
-### Como submeter?
+reports -> Armazena o Relatorio.html do Cucumber
 
-Deverá ser enviado um PULL REQUEST com o seu teste.
+cucumber.yml -> Arquivo de configuração de ambiente/relatórios.
 
-#### Como funciona?
+Gemfile -> Biblioteca de dependências(gems) do Ruby.
 
-- Fork deste repositório (Não clonar direto)
-- Clonar a partir do repositório que foi criado na sua conta
-- Commitará e subirá as alterações para o SEU fork
-- Abra um Pull Request para este repositório
+#############################################################################################
 
+COMO EXECUTAR O PROJETO?
 
+Dentro da estrutura -> [automacao_fleury/testes], dar o comando cucumber no terminal ou cucumber -t @buscar_unidade.
 
+#############################################################################################
+
+CONSIDERAÇÕES SOBRE O PROJETO:
+
+Projeto funcionou corretamente, porém o elemento :filtro, "#checkoox-select-facilities > svg"
+quebrou os testes algumas vezes, por conta de não ser encontrado na tela.
+Então coloquei um sleep + wait_until_filtro_visible no método buscar, com isso o teste não quebrou mais, caso volte a quebrar na primeira tentativa, execute mais de 1 vez.
+
+#############################################################################################
+
+SOBRE O AUTOR:
+
+    Nome:  Rodrigo Carlos de Souza
+   Email:  rodrigocarlosuniban@yahoo.com.br
+  Github:  https://github.com/rodrigosouza83
+LinkedIn:  https://www.linkedin.com/in/rodsouza83/
+
+#############################################################################################
