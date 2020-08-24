@@ -1,0 +1,5 @@
+APP:
+  URL: https://www.fleury.com.br/
+  URL_AUTH: https://google.com
+  USER_LOGIN: root
+  USER_PASSWORD: root

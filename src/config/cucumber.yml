@@ -1,0 +1,7 @@
+##YAML Template
+default: -p html_report --tags "not @ignore and not @issue"
+dev: export ENV=dev && -p default --tags "@dev"
+html_report: --format progress --format html --out=report/features_report.html
+smoke: --tags @smoke -p default
+ci: -p headless
+headless: -p default BROWSER=chrome_headless
