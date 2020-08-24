@@ -1,9 +1,0 @@
-# yml template
----
-
-default: -p pretty -p html -p chrome
-pretty: --format pretty
-chrome: BROWSER=chrome
-firefox: BROWSER=firefox
-chrome_headless: BROWSER=chrome_headless
-html: --format html --out=log/report.html
