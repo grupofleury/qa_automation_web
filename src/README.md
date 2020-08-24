@@ -61,7 +61,7 @@ Depois disso, as pŕoximas instalações serão feitas pelo próprio bundler.
 
 ## Após baixar o projeto
 
-Execute o comando abaixo para instalar as dependênias que estão dentro do arquivo "Gemfile" que está na raíz do projeto:
+Execute o comando abaixo para instalar as dependênias que estão dentro do arquivo "Gemfile" que está no diretório `src` do projeto:
 
     bundle install
 
