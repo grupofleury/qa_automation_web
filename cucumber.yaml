@@ -1,0 +1,21 @@
+---
+# Configuração default do cucumber
+default: -p prod -p chrome -p json -p pretty
+
+# Ambientes
+dev: ENV_TYPE=dev
+prod: ENV_TYPE=prod
+hmg: ENV_TYPE=hmg
+
+# Navegadores
+firefox: BROWSER=firefox
+chrome: BROWSER=chrome
+headless: BROWSER=headless
+
+# Reports
+html: --format html --out=log/report.html
+json: --format json --out=log/report.json
+
+# Formato a ser visto da execução dos testes no terminal
+pretty: --format pretty
+dot: --format progress
