@@ -1,0 +1,7 @@
+*.png
+*.html
+*.json
+*.txt
+*.csv
+/report/*.html
+/report_default/*.html

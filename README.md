@@ -18,7 +18,7 @@
 
 ### Teste:
 
-O Objetivo do teste consiste em validar o Nome da unidade que é exibida na tela, através do site [Fleury](http://www.fleury.com.br)
+O Objetivo do teste consiste em validar o Nome da unit que é exibida na tela, através do site [Fleury](http://www.fleury.com.br)
 
 ### ![image.png](/images/Imagem01.png)
 

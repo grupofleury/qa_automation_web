@@ -1,0 +1,11 @@
+# home
+header_unidade:          "//*[@id='button-title-desktop-header']//*[contains(text(),'Unidades')]"
+
+#unidades
+chk_facilidade:          "//*[@id='checkoox-select-facilities']"
+opt_bicicletario:        "//*[@class='inline-blockcomponentstyle__InlineBlockStyled-sc-195i71f-0 cipNCP']//*[contains(text(),'Bicicletário')]"
+opt_vacinacao:           "//*[@class='inline-blockcomponentstyle__InlineBlockStyled-sc-195i71f-0 cipNCP']//*[contains(text(),'Vacinação')]"
+opt_atendimento:         "//*[@class='inline-blockcomponentstyle__InlineBlockStyled-sc-195i71f-0 cipNCP']//*[contains(text(),'Atendimento aos domingos')]"
+btn_detalhe:             "//div[contains(text(),'Ver detalhes')]"
+txt_libano:              "//h1[contains(text(),'República do Líbano')]"
+
