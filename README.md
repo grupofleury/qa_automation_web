@@ -36,14 +36,8 @@ O Objetivo do teste consiste em validar o Nome da unidade que é exibida na tela
 
 ### Como submeter?
 
-Deverá ser enviado um PULL REQUEST com o seu teste.
+O Participante deverá criar um projeto publico no Git pessoal dele e após o Termino do Teste, deverá enviar a URL com o Projeto desenvolvido.
 
-#### Como funciona?
-
-- Fork deste repositório (Não clonar direto)
-- Clonar a partir do repositório que foi criado na sua conta
-- Commitará e subirá as alterações para o SEU fork
-- Abra um Pull Request para este repositório
 
 
 
