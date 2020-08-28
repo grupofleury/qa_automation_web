@@ -6,6 +6,8 @@ end
 Quando('acesso uma opção de facilidade') do
     # puts "nome_unidade exists:"#+@inicio_page.nome_unidade.exists?
     @inicio_page.listar_unidades
+    @inicio_page.selecionar_unidade_checkbox
+
     @facilidade = @inicio_page.obter_nome_facilidade
     log "nome da facilidade: "+@facilidade
     @inicio_page.selecionar_facilidade

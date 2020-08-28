@@ -4,8 +4,9 @@ class InicioPage < SitePrism::Page
       all('div[class="boxcomponentstyle__Item-sc-43ermp-1 hhcXYp"]').select {|elt| elt.text == "Unidades" }.first.click
    end
 
-   def selecionar_unidade
-
+   def selecionar_unidade_checkbox
+      page.first('div[class="checkbox-selectcomponentstyle__CheckboxSelectPlaceholderStyled-sc-7ktrvg-2 jgzIlF"]').click
+      all('div[class="checkbox-fieldcomponentstyle__CheckboxFieldStyled-sc-1mdajsk-0 DRDNI"]').first.click
    end
 
    def obter_nome_facilidade
