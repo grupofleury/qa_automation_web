@@ -1,5 +1,4 @@
 class InicioPage < SitePrism::Page
-
    def listar_unidades
       all('div[class="boxcomponentstyle__Item-sc-43ermp-1 hhcXYp"]').select {|elt| elt.text == "Unidades" }.first.click
    end
@@ -18,7 +17,6 @@ class InicioPage < SitePrism::Page
    end
 
    def comparar_nome_unidade(nome_unidade)
-      puts "nome da unidade na pagina unidade: "+page.first('h1[class="typographycomponentstyle__H1-sc-1oox73n-1 lomAMa"]').text
-      page.first('h1[class="typographycomponentstyle__H1-sc-1oox73n-1 lomAMa"]').text.should == nome_unidade
+      page.find('div', text: nome_unidade, match: :first) != nil
    end
 end
