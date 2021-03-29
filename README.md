@@ -30,7 +30,7 @@ O Objetivo do teste consiste em validar o Nome da unidade que é exibida na tela
 
 ### Deve-se seguir estes passos:
 
-- Elaborar o BDD com o comportamento das screens acima
+- Elaborar o cenário de testes em Gherkin com o comportamento das telas acima capturadas.
 - Montar o script de automação com todos os requisitos solicitados
 - Gerar um report e inclui-lo no commit, comprovando que o teste deu OK ao ser executado
 
