@@ -3,7 +3,7 @@
 
 ### Requisitos
 
-- Ruby
+- Ruby, Selenium ou Cypress
 - Capybara
 - Cucumber
 - BDD
